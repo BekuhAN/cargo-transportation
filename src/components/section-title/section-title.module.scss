@@ -1,0 +1,26 @@
+.section_title {
+  // padding: 100px 0;
+  &.column {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 30px;
+  }
+  &.light {
+    & > h2,
+    & > h3 {
+      color: #fff;
+    }
+  }
+  &__subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #00358d;
+    font-weight: 700;
+  }
+  &__title {
+    font-size: 50px;
+    color: #00112e;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+}

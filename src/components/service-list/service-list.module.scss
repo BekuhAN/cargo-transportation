@@ -1,0 +1,10 @@
+.service_list {
+  background: url("../../assets/service-bg-truck.webp") no-repeat top right,
+    #00112e;
+  padding: 90px;
+  border-radius: 20px;
+  &__title {
+    width: 50%;
+    padding-left: 100px;
+  }
+}

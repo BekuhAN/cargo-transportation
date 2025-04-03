@@ -1,17 +1,28 @@
 .header {
-    height: 180px;
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
+  height: 180px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
   background: linear-gradient(
     to bottom,
     rgb(4 23 47 / 90%) 25%,
     rgb(4 23 47 / 90%) 30%,
     rgb(4 19 37 / 0%) 100%
   );
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  z-index: 10;
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
+  }
+  &__logo {
+    height: 50px;
+    img {
+      height: 100%;
+    }
   }
   &__nav {
     &__list {
@@ -27,8 +38,14 @@
       padding: 20px 0;
       text-transform: uppercase;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 300;
       color: #fff;
     }
+  }
+  &__btn {
+    margin-left: auto;
+    height: 61px;
+    padding: 0px 50px;
+    background: #00358d;
   }
 }

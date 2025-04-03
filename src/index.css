@@ -4,9 +4,53 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Unbounded", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   padding: 20px;
+  background: #ebeff3;
+}
+
+.swiper-pagination {
+    top: 50% !important;
+    right: -35px !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    background: #ebeff3 !important;
+    padding: 15px 30px !important;
+    border-radius: 0 0 30px 30px !important;
+    transform: translateY(-50%) rotate(90deg) !important;
+    position: relative;
+}
+
+.swiper-pagination::before, .swiper-pagination::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 10px;
+  margin-left: -10px;
+  margin-top: -10px;
+  box-sizing: content-box;
+  box-shadow: 0 -20px 0 0 #ebeff3;
+  bottom: -28px;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.swiper-pagination::before {
+  border-radius: 0 20px 0 0;
+  left: calc(-100% - 10px);
+}
+.swiper-pagination::after {
+  border-radius: 20px 0 0 0;
+  right:  calc(-100% - 20px);
+}
+.split-word {
+  will-change: transform, opacity;
 }
