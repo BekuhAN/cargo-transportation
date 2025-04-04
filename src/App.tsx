@@ -4,7 +4,7 @@ import Header from "./components/header/header";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
-import { HeroUIProvider } from "@heroui/react";
+import { HeroUIProvider, ToastProvider } from "@heroui/react";
 
 function App(): ReactElement {
   const { pathname } = useLocation();
@@ -14,6 +14,7 @@ function App(): ReactElement {
 
   return (
     <HeroUIProvider>
+      <ToastProvider />
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
