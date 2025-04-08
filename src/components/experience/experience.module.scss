@@ -1,0 +1,15 @@
+.experience {
+  &__inner {
+    background: #00112e;
+    padding: 100px 220px;
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    mix-blend-mode: difference;
+  }
+}

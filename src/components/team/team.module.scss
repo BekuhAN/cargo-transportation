@@ -1,0 +1,16 @@
+.team {
+  padding-top: 100px;
+  background: url("../../assets/team-bg.webp") no-repeat;
+  background-position: 0px center;
+  background-size: auto 100%;
+  margin: 0px -20px;
+  &__list {
+    padding-left: 480px;
+    margin-top: 50px;
+    border-bottom: 1px solid #BCC4CD;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+}
