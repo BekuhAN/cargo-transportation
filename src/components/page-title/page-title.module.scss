@@ -1,0 +1,33 @@
+.page_title {
+  height: 550px;
+  border-radius: 20px;
+  background: url("../../assets/page-title-bg.jpg") no-repeat center center;
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  &__title {
+    font-size: 70px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    a {
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &__item {
+        font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.about {
+  &__info {
+    padding: 100px 0;
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+    }
+    &__description {
+      margin: 50px 0;
+      color: #304364;
+    }
+    &__services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #00112e1f;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &__icon {
+          background: #fff;
+          padding: 10px;
+          color: #00358d;
+          border-radius: 20px;
+        }
+        &__title {
+          color: #00112e;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.1;
+        }
+      }
+    }
+    &__choose {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &__icon {
+        min-width: 30px;
+      }
+    }
+    &__image {
+      padding-left: 50px;
+      position: relative;
+      img {
+        border-radius: 20px;
+      }
+    }
+    &__subimage {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      box-shadow: -20px -20px 0 #eaeef2;
+      border-radius: 20px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        background: transparent;
+        box-shadow: 20px 20px 0 #eaeef2;
+      }
+      &::before {
+        bottom: 86px;
+        left: -70px;
+      }
+      &::after {
+        top: -70px;
+        right: 73px;
+      }
+    }
+    &__experience {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      height: 180px;
+      width: 180px;
+      background: #00112e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 1;
+      gap: 10px;
+      border-radius: 20px;
+      text-align: center;
+      span {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
+  }
+}

@@ -35,6 +35,62 @@ function Experience(): ReactElement {
                 subtitle="Наш опыт"
                 light={true}
               />
+              <ul className={styles.experience__content__list}>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Профессиональная упаковка грузов
+                </li>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Доставка по всей России и за рубеж
+                </li>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Гарантия сохранности – нулевые риски
+                </li>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Соблюдение сроков
+                </li>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Гибкие тарифы и экономия вашего бюджета
+                </li>
+                <li className={styles.experience__content__list__item}>
+                  <Icon
+                    icon="material-symbols-light:check-box-rounded"
+                    width="24"
+                    height="24"
+                    className={styles.experience__content__list__icon}
+                  />
+                  Оперативная транспортировка
+                </li>
+              </ul>
             </div>
             <div className={styles.experience__content__column}>
               <div className={styles.experience__content__column__item}>
@@ -43,10 +99,10 @@ function Experience(): ReactElement {
                 >
                   <Icon
                     icon="material-symbols-light:arrow-upward-rounded"
-                    width="24"
-                    height="24"
+                    width="80"
+                    height="80"
                   />
-                  <motion.pre>{rounded1}</motion.pre> тыс.
+                  <motion.pre>{rounded1}</motion.pre>к
                 </div>
 
                 <div
@@ -63,13 +119,13 @@ function Experience(): ReactElement {
                 >
                   <Icon
                     icon="material-symbols-light:arrow-upward-rounded"
-                    width="24"
-                    height="24"
+                    width="80"
+                    height="80"
                   />
                   <motion.pre whileInView={{ opacity: 1 }}>
                     {rounded2}
-                  </motion.pre>{" "}
-                  тыс.
+                  </motion.pre>
+                  к
                 </div>
 
                 <div
@@ -81,6 +137,28 @@ function Experience(): ReactElement {
                   компаний
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.experience__contacts}>
+        <div className={styles.experience__contacts__image}></div>
+        <div className={styles.experience__contacts__details}>
+          <div className={styles.experience__contacts__title}>
+            Мы знаем, что каждая перевозка — это важно
+          </div>
+          <div className={styles.experience__contacts__phone}>
+            <div className={styles.experience__contacts__phone__icon}>
+              <Icon
+                icon="material-symbols-light:phone-in-talk"
+                width="40"
+                height="40"
+              />
+            </div>
+
+            <div className={styles.experience__contacts__phone__number}>
+              Позвоните нам!
+              <a href="tel:+79991113356">+7 (999) 111-33-56</a>
             </div>
           </div>
         </div>

@@ -25,6 +25,7 @@
     }
   }
   &__nav {
+    $this: &;
     &__list {
       display: flex;
       align-items: center;
@@ -33,6 +34,14 @@
       border-radius: 50px;
       padding: 0px 50px;
     }
+    &__item {
+      position: relative;
+      &:hover {
+        #{$this}__sublist {
+          transform: scaleY(1);
+        }
+      }
+    }
     &__link {
       display: inline-block;
       padding: 20px 0;
@@ -40,6 +49,28 @@
       font-size: 14px;
       font-weight: 300;
       color: #fff;
+    }
+    &__sublist {
+      position: absolute;
+      background: #fff;
+      border-radius: 20px;
+      bottom: 0;
+      top: 90%;
+      height: max-content;
+      width: max-content;
+      padding: 20px 30px;
+      transform-origin: top;
+      transform: scaleY(0);
+      z-index: 9;
+      transition: 0.3s;
+    }
+    &__sublink {
+      padding: 5px 0;
+      display: block;
+      transition: 0.3s;
+      &:hover {
+        color: #00358d;
+      }
     }
   }
   &__btn {

@@ -6,6 +6,7 @@ import Calculate from "../../components/calculate/calculate";
 import Team from "../../components/team/team";
 import Comments from "../../components/comments/comments";
 import Experience from "../../components/experience/experience";
+import News from "../../components/news/news";
 
 function Home(): ReactElement {
   return (
@@ -17,6 +18,7 @@ function Home(): ReactElement {
       <Team />
       <Comments />
       <Experience />
+      <News currentNews={1} />
     </main>
   );
 }

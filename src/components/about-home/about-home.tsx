@@ -88,7 +88,7 @@ function AboutHome(): ReactElement {
               }
               radius="full"
               variant="bordered"
-              onClick={() => navigate("/contacts")}
+              onClick={() => navigate("/about")}
             >
               Подробнее о нас
             </Button>

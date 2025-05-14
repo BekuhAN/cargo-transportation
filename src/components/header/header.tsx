@@ -6,9 +6,11 @@ import { Button } from "@heroui/react";
 import clsx from "clsx";
 import Logo from "../../assets/logo-white.png";
 import { Icon } from "@iconify/react";
+import { useServices } from "../../data-access/services/use-services";
 
 function Header(): ReactElement {
   const navList = useNavigation();
+  const servicesList = useServices();
   const navigate = useNavigate();
 
   return (
@@ -25,6 +27,24 @@ function Header(): ReactElement {
                   <Link className={styles.header__nav__link} to={item.path}>
                     {item.title}
                   </Link>
+                  {item.title === "Услуги" && (
+                    <ul className={clsx(styles.header__nav__sublist)}>
+                      {servicesList.length > 0 &&
+                        servicesList.map((service) => (
+                          <li
+                            className={styles.header__nav__subitem}
+                            key={service.id}
+                          >
+                            <Link
+                              className={styles.header__nav__sublink}
+                              to={`/services/${service.id}`}
+                            >
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))}
+                    </ul>
+                  )}
                 </li>
               ))}
           </ul>

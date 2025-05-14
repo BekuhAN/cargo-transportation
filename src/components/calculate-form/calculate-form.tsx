@@ -52,6 +52,7 @@ function CalculateForm(): ReactElement {
           label="Ваше имя *"
           type="text"
           name="calc_name"
+          required
         />
         <Input
           className={styles.calculate_form__item}
@@ -61,6 +62,7 @@ function CalculateForm(): ReactElement {
           label="Ваша почта *"
           type="email"
           name="calc_email"
+          required
         />
         <Input
           className={styles.calculate_form__item}
@@ -69,6 +71,7 @@ function CalculateForm(): ReactElement {
           radius="full"
           label="Откуда *"
           type="text"
+          required
           name="calc_from"
         />
         <Input
@@ -76,6 +79,7 @@ function CalculateForm(): ReactElement {
           classNames={{ inputWrapper: styles.calculate_form__item__inner }}
           variant="bordered"
           radius="full"
+          required
           label="Куда *"
           type="text"
           name="calc_to"
@@ -86,6 +90,7 @@ function CalculateForm(): ReactElement {
           variant="bordered"
           radius="full"
           label="Вес, кг *"
+          required
           type="text"
           name="calc_weight"
         />
@@ -94,6 +99,7 @@ function CalculateForm(): ReactElement {
           classNames={{ inputWrapper: styles.calculate_form__item__inner }}
           variant="bordered"
           radius="full"
+          required
           label="Длина, см *"
           type="text"
           name="calc_length"
@@ -103,6 +109,7 @@ function CalculateForm(): ReactElement {
           classNames={{ inputWrapper: styles.calculate_form__item__inner }}
           variant="bordered"
           radius="full"
+          required
           label="Ширина, см *"
           type="text"
           name="calc_width"
@@ -111,6 +118,7 @@ function CalculateForm(): ReactElement {
           className={styles.calculate_form__item}
           classNames={{ inputWrapper: styles.calculate_form__item__inner }}
           variant="bordered"
+          required
           radius="full"
           label="Высота, см *"
           type="text"
